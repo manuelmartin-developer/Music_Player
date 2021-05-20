@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tarea3_Martin_Diaz_Jimenez_Manuel</string>
+    <string name="app_name">Player</string>
     <string name="reproductorMusica">Reproductor de Música</string>
     <string name="reproductorVideo">Reproductor de Vídeo</string>
     <string-array name="listadoCanciones">
