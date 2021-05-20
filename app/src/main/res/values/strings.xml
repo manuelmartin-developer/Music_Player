@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tarea3_Martin_Diaz_Jimenez_Manuel</string>
+    <string name="reproductorMusica">Reproductor de Música</string>
+    <string name="reproductorVideo">Reproductor de Vídeo</string>
+    <string-array name="listadoCanciones">
+        <item>Mozart</item>
+        <item>Bach</item>
+        <item>Beethoven</item>
+    </string-array>
+    <string name="btPlay">PLAY</string>
+    <string name="btParar">PARAR</string>
+    <string name="btPausar">PAUSAR</string>
+    <string name="btAvanzar">+ 10"''"</string>
+    <string name="btRetroceder">- 10"''"</string>
+    <string name="btCambiarCancion">...</string>
+</resources>

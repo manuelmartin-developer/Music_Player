@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReproductorMusica">
+
+    <ListView
+        android:id="@+id/lvCanciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btCambiarCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/grisOscuro"
+        android:src="@drawable/playlist"
+        app:layout_constraintBottom_toTopOf="@+id/btParar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/vacio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvCanciones" />
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/btPlay"
+        android:textColor="@color/grisOscuro"
+        app:layout_constraintEnd_toStartOf="@+id/btPausar"
+        app:layout_constraintTop_toBottomOf="@+id/ivCancion" />
+
+    <Button
+        android:id="@+id/btPausar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btPausar"
+        android:textColor="@color/grisOscuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCancion" />
+
+    <Button
+        android:id="@+id/btParar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btParar"
+        android:textColor="@color/grisOscuro"
+        app:layout_constraintStart_toEndOf="@+id/btPausar"
+        app:layout_constraintTop_toBottomOf="@+id/ivCancion" />
+
+    <Button
+        android:id="@+id/btAvanzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/btAvanzar"
+        android:textColor="@color/grisOscuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btParar" />
+
+    <Button
+        android:id="@+id/btRetroceder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btRetroceder"
+        android:textColor="@color/grisOscuro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btPlay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
